@@ -1,0 +1,6 @@
+9
+Boss 1
+1
+Sprites/battle/boss/boss1.png
+5
+1

@@ -1,0 +1,6 @@
+22
+Boss 3
+1
+Sprites/battle/boss/boss3.png
+15
+3

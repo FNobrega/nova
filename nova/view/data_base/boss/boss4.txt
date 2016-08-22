@@ -1,0 +1,6 @@
+30
+Boss 4
+1
+Sprites/battle/boss/boss4.png
+30
+3
