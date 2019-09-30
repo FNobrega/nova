@@ -4,10 +4,10 @@ from model.menu import *
 
 
 def loadMenu(x, y, mousePosition, screenMenu):
-    backgroundMenu = GameImage("Sprites/menu/backgroundMenu.png")
-    title = GameImage("Sprites/menu/titleMenu.png")
-    loadImage = GameImage("Sprites/menu/load.png")
-    newGameImage = GameImage("Sprites/menu/newGame.png")
+    backgroundMenu = GameImage("view/Sprites/menu/backgroundMenu.png")
+    title = GameImage("view/Sprites/menu/titleMenu.png")
+    loadImage = GameImage("view/Sprites/menu/load.png")
+    newGameImage = GameImage("view/Sprites/menu/newGame.png")
     title.set_position(x/16,y/15)
     loadImage.set_position(x/4-(loadImage.width/2), y/2 - (loadImage.height/2))
     newGameImage.set_position(x/1.3-(newGameImage.width/2), y/2 - (newGameImage.height/2))
@@ -31,10 +31,10 @@ def loadMenu(x, y, mousePosition, screenMenu):
 
 
 def loadMenuNewGame(x, y, mousePosition, screenMenu):
-    backgroundMenu = GameImage("Sprites/menu/backgroundClass.png")
-    warriorImage = GameImage("Sprites/menu/warriorMenu.png")
-    paladinImage = GameImage("Sprites/menu/paladinMenu.png")
-    mageImage = GameImage("Sprites/menu/mageMenu.png")
+    backgroundMenu = GameImage("view/Sprites/menu/backgroundClass.png")
+    warriorImage = GameImage("view/Sprites/menu/warriorMenu.png")
+    paladinImage = GameImage("view/Sprites/menu/paladinMenu.png")
+    mageImage = GameImage("view/Sprites/menu/mageMenu.png")
 
     startText = "To start, select your character:"
 
@@ -69,24 +69,24 @@ def loadMenuNewGame(x, y, mousePosition, screenMenu):
 
 def loadHistoryMenu(x, y, mousePosition, screenMenu):
     textPositionY = 1
-    backgroundHistoryMenu = GameImage("Sprites/menu/backgroundHistory.png")
-    click = GameImage("Sprites/menu/clickHereToContinue.png")
+    backgroundHistoryMenu = GameImage("view/Sprites/menu/backgroundHistory.png")
+    click = GameImage("view/Sprites/menu/clickHereToContinue.png")
     click.set_position(x/2-click.width/2, y-click.height)
 
     if (mousePosition[0] > click.x and mousePosition[0] < click.x + click.width) and\
             (mousePosition[1] > click.y and mousePosition[1] < click.y + click.height):
       screenMenu = 1
       return screenMenu
-    history = readHistory("data_base/text/menu/initialText.txt")
+    history = readHistory("view/data_base/text/menu/initialText.txt")
     backgroundHistoryMenu.draw()
     for i in range(len(history)):
-        screenMenu.draw_text(history[i], screenMenu.width/40, screenMenu.height/7*textPositionY, size=25, color=(240, 240, 240))
+        screenMenu.draw_text(history[i], screenMenu.width/40, screenMenu.height/7*textPositionY, size=25, color=(0, 0, 0))
         textPositionY += 0.5
     click.draw()
     return -1
 
 
 def winMenu():
-    backgroundWin = GameImage("Sprites/menu/backgroundWin.png")
+    backgroundWin = GameImage("view/Sprites/menu/backgroundWin.png")
     backgroundWin.draw()
     return 6

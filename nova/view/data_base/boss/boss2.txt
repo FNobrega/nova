@@ -1,6 +1,6 @@
 13
 Boss 2
 1
-Sprites/battle/boss/boss2.png
+view/Sprites/battle/boss/boss2.png
 10
 2

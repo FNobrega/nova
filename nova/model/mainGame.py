@@ -3,7 +3,7 @@
 
 # Function
 def openBossFile(n):
-    location = "data_base/boss/boss"+str(n)+".txt"
+    location = "view/data_base/boss/boss"+str(n)+".txt"
     file = open(location, "r")
     array = [0, "Boss", 0, "sprite 1", 0, 0]
     # lvl, name, type, image location, item, weapon

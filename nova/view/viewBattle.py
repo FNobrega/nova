@@ -3,8 +3,8 @@ from PPlay.gameimage import *
 from controller.controllerBattle import *
 from time import sleep
 count = 0
-backgroundBattle = GameImage("background/fundoBatalha1.png")
-win = GameImage("Sprites/battle/winner.png")
+backgroundBattle = GameImage("view/background/fundoBatalha1.png")
+win = GameImage("view/Sprites/battle/winner.png")
 
 
 # main Project
@@ -34,9 +34,9 @@ def loadBattle(player, oponent, screenBattle, movement,bossNumb):
 
     player.charImageBattle[1].set_position(screenBattle.width / 16, screenBattle.height / 3)
     oponent.charImageBattle[0].set_position(screenBattle.width * 3 / 4, screenBattle.height / 18)
-    backgroundText = GameImage("Sprites/battle/backgroundText.png")
+    backgroundText = GameImage("view/Sprites/battle/backgroundText.png")
     backgroundText.set_position(screenBattle.width/3, screenBattle.height*18/28)
-    backgroundTextOp = GameImage("Sprites/battle/backgroundTextOp.png")
+    backgroundTextOp = GameImage("view/Sprites/battle/backgroundTextOp.png")
     backgroundTextOp.set_position(screenBattle.width/16, screenBattle.height*2/28)
     # Draw
     backgroundBattle.draw()# First draw

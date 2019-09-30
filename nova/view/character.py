@@ -45,13 +45,13 @@ class Warrior(Character):
         Character.__init__(self, name, lvl)
 
         # load functions
-        self.charImageBattle = [Sprite("Sprites/battle/character/warriorFrontTransparent.png"),
-                                Sprite("Sprites/battle/character/warriorBackTransparent.png")]
-        self.charImageWorld = [Sprite("Sprites/map/warriorRunBack.png", 3),
-                               Sprite("Sprites/map/warriorRunFront.png", 3),
-                               Sprite("Sprites/map/warriorRunLeft.png", 3),
-                               Sprite("Sprites/map/warriorRunRight.png", 3),
-                               Sprite("Sprites/map/warriorRunFront.png", 3)]
+        self.charImageBattle = [Sprite("view/Sprites/battle/character/warriorFrontTransparent.png"),
+                                Sprite("view/Sprites/battle/character/warriorBackTransparent.png")]
+        self.charImageWorld = [Sprite("view/Sprites/map/warriorRunBack.png", 3),
+                               Sprite("view/Sprites/map/warriorRunFront.png", 3),
+                               Sprite("view/Sprites/map/warriorRunLeft.png", 3),
+                               Sprite("view/Sprites/map/warriorRunRight.png", 3),
+                               Sprite("view/Sprites/map/warriorRunFront.png", 3)]
         self.type = 2
         self.attackConst = 3
 
@@ -77,11 +77,11 @@ class Paladin(Character):
     def __init__(self, name, lvl):
         Character.__init__(self, name, lvl)
 
-        self.charImageBattle = [Sprite("Sprites/battle/character/paladinFrontTransparent.png"),
-                                Sprite("Sprites/battle/character/paladinBackTransparent.png")]
-        self.charImageWorld = [Sprite("Sprites/map/paladinRunBack.png", 3), Sprite("Sprites/map/paladinRunFront.png",3),
-                               Sprite("Sprites/map/paladinRunLeft.png", 3), Sprite("Sprites/map/paladinRunRight.png",3),
-                               Sprite("Sprites/map/paladinRunFront.png", 3)]
+        self.charImageBattle = [Sprite("view/Sprites/battle/character/paladinFrontTransparent.png"),
+                                Sprite("view/Sprites/battle/character/paladinBackTransparent.png")]
+        self.charImageWorld = [Sprite("view/Sprites/map/paladinRunBack.png", 3), Sprite("view/Sprites/map/paladinRunFront.png",3),
+                               Sprite("view/Sprites/map/paladinRunLeft.png", 3), Sprite("view/Sprites/map/paladinRunRight.png",3),
+                               Sprite("view/Sprites/map/paladinRunFront.png", 3)]
         self.type = 1
         self.attackConst = 2
 
@@ -112,11 +112,11 @@ class Mage(Character):
 
     def __init__(self, name, lvl):
         Character.__init__(self, name, lvl)
-        self.charImageBattle = [Sprite("Sprites/battle/character/mageFrontTransparent.png"),
-                                Sprite("Sprites/battle/character/mageBackTransparent.png")]
-        self.charImageWorld = [Sprite("Sprites/map/mageRunBack.png", 3), Sprite("Sprites/map/mageRunFront.png", 3),
-                               Sprite("Sprites/map/mageRunLeft.png", 3), Sprite("Sprites/map/mageRunRight.png", 3),
-                               Sprite("Sprites/map/mageRunFront.png"), 3]
+        self.charImageBattle = [Sprite("view/Sprites/battle/character/mageFrontTransparent.png"),
+                                Sprite("view/Sprites/battle/character/mageBackTransparent.png")]
+        self.charImageWorld = [Sprite("view/Sprites/map/mageRunBack.png", 3), Sprite("view/Sprites/map/mageRunFront.png", 3),
+                               Sprite("view/Sprites/map/mageRunLeft.png", 3), Sprite("view/Sprites/map/mageRunRight.png", 3),
+                               Sprite("view/Sprites/map/mageRunFront.png"), 3]
         self.type = 0
         self.attackConst = 1
 
